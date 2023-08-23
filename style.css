@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ .photo{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 30px auto;
+
+    transition: .5s;
+ }
+.photo:hover{
+  filter: blur(5px);
+  filter: brightness(200%);
+  filter: contrast(120%);
+   filter: grayscale(100%);
+   filter: hue-rotate(180deg);
+   filter: invert(100%);
+   filter: saturate(120%);
+   filter: sepia(100%);
+
+
+   filter: blur(3px) grayscale(100%);
+}
+.container{
+    width: 80%;
+    height: 500px;
+    border: 1px solid red;
+    margin: auto;
+}
+.container span{
+    border: 1px solid blue;
+    display: block;
+    width: 300px;
+}
+.container p{
+    border: 1px solid black;
+    display: inline;
+    width: 300px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+.hide{
+    width: 200px;
+    height: 200px;
+    background: red;
+    display: none;
+    
+
+}
+.parent{
+ border: 1px solid red;    
+}
+.parent > p{
+    color: red;
+}
+.parent + p{
+    color: violet;
+}
+
+
+
